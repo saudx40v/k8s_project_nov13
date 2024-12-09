@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K8s Project Nov13</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to k8s_project_nov13</h1>
+    </header>
+    <main>
+        <p>This project demonstrates a simple deployment using Kubernetes and Docker.</p>
+        <p>Environment: <strong id="env">Loading...</strong></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 k8s_project_nov13</p>
+    </footer>
+
+    <script>
+        // Fetch environment variable from injected config (if applicable)
+        document.getElementById('env').innerText = '{{ APP_ENV }}' || 'default';
+    </script>
+</body>
+</html>

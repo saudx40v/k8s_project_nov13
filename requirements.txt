@@ -1,0 +1,14 @@
+# Kubernetes Project: k8s_project_nov13
+
+## Description
+This project deploys an NGINX application using Kubernetes with ConfigMap and LoadBalancer Service.
+
+## Files
+- `deployment.yaml`: Defines the Deployment for the application.
+- `service.yaml`: Exposes the application using a LoadBalancer.
+- `configmap.yaml`: Manages configuration data.
+
+## Steps to Deploy
+1. Apply the ConfigMap:
+   ```bash
+   kubectl apply -f configmap.yaml
